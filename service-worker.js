@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/precache-manifest.820ea95b2d3a3b2b3dad9c376406e8f2.js"
+  "/precache-manifest.5be43166fcaff162147c3fbc25fa4a03.js"
 );
 
 workbox.core.setCacheNameDetails({prefix: "copy_cv"});
