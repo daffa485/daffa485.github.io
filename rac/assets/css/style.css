@@ -1,0 +1,252 @@
+@font-face {
+    font-family: 'opulentregular';
+    src: url('optima-webfont.woff2') format('woff2'),
+         url('optima-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ibm_plex_sansregular';
+    src: url('ibmplexsans-regular-webfont.woff2') format('woff2'),
+         url('ibmplexsans-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    font-family: 'opulentregular';
+}
+
+.description-text p{
+    font-family: 'ibm_plex_sansregular';
+    color: gray;
+}
+
+.navbar-custom {
+    background-color: #001f52;
+    display: block;
+}
+
+.navbar-custom .navbar-brand,
+.navbar-custom .navbar-text {
+    color: white;
+}
+
+.navbar-custom .navbar-brand {
+    padding-left: 100px;
+}
+
+.nav-menu-custom {
+    display: flex;
+    padding-right: 100px;
+    justify-content: space-between;
+}
+
+.nav-menu-custom ul li a{
+    color: white;
+    font-size: 13px;
+}
+
+li.dropdown ul li a{
+    color: black;
+    font-size: 13px;
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+}
+
+.left {
+    position: absolute;
+    top: 30%;
+    left: 20%;
+    /* transform: translate(-50%, -50%); */
+    /* text-align: center; */
+    color: white;
+}
+
+.opener-text{
+    color: #033382;
+    font-size: 13px;
+}
+
+#business-content1 {
+    padding: 50px 150px;
+    background-color: white;
+}
+
+#business-content2 {
+    padding: 30px 150px;
+    background-color: white;
+}
+
+#business-content3 {
+    padding: 30px 150px;
+    background-color: white;
+}
+
+#business-content1 p {
+    font-size: 17px;
+}
+
+#business-content2 p {
+    font-size: 17px;
+}
+
+#business-content3 p {
+    font-size: 17px;
+}
+
+.business-number {
+    color: blue;
+}
+
+.rac-footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: #001f52;
+    color: white;
+}
+
+/* div#principles-content1 .padding-text {
+    padding-right: 130px;
+} */
+
+#principles-content1 {
+    margin-left: 200px;
+    font-size: 17px;
+    line-height: 1.5;
+}
+
+#principles-content2 {
+    padding-top: 50px;
+    margin-right: 200px;
+    font-size: 17px;
+    line-height: 1.5;
+}
+
+#principles-content3 {
+    margin-left: 200px;
+    font-size: 17px;
+    line-height: 1.5;
+}
+
+.team-container {
+    padding: 150px;
+}
+
+.team-image {
+    position: relative;
+    width: 100%;
+}
+
+.team-img-filter { 
+    filter: grayscale(100%);
+    transition: .5s ease; 
+}
+
+.team-img-filter:hover {
+    filter: grayscale(0%);
+}
+
+.team-description {
+    position: absolute;
+    color: white;
+    text-align: left;
+    z-index: 1;
+    margin-left: 20px;
+    margin-right: 20px;
+    top: 50%;
+}
+
+@media only screen and (max-width: 971px) {
+
+    .home-banner img {
+        height: 600px;
+        /* width: 100000px; */
+        transform: scale(2.0);
+        object-fit: cover;
+    }
+
+    .contact-banner img {
+        height: 575px;
+    }
+
+    .left {
+        left: 10%;
+    }
+
+    .logo-img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 75%;
+    }
+
+    button.btn-close {
+        font-size: 10px;
+    }
+
+    .copyright-name {
+        display: none;
+    }
+
+    /* .contact-to {
+        display: none;
+    } */
+
+    .banner img{
+        height: 500px;
+        /* transform: scale(1.5); */
+    }
+
+    .centered h1{
+        font-size: 20px;
+    }
+
+    .team-container {
+        padding: 45px;
+    }
+
+    #business-content1 {
+        padding: 30px;
+    }
+
+    #business-content2 {
+        padding: 30px;
+    }
+
+    #business-content3 {
+        padding: 30px;
+    }
+
+    #principles-content1 {
+        margin: auto;
+    }
+
+    #principles-content1.padding-text {
+        padding: 0px;
+    }
+
+    #principles-content2 {
+        margin: auto;
+    }
+
+    #principles-content2.padding-text {
+        padding: 0px;
+    }
+
+    #principles-content3 {
+        margin: auto;
+    }
+
+    #principles-content3.padding-text {
+        padding: 0px;
+    }
+}
