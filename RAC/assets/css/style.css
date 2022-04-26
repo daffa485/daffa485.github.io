@@ -165,10 +165,14 @@ li.dropdown ul li a{
     top: 50%;
 }
 
+.team-description p.team-position {
+    font-size: 15px;
+}
+
 @media only screen and (max-width: 971px) {
 
     .home-banner img {
-        height: 600px;
+        height: 800px;
         /* width: 100000px; */
         transform: scale(2.0);
         object-fit: cover;
@@ -182,11 +186,19 @@ li.dropdown ul li a{
         left: 10%;
     }
 
+    .navbar-custom .navbar-brand {
+        padding-left: 20px;
+    }
+
     .logo-img {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
+        /* display: block; */
+        /* margin-left: auto; */
+        /* margin-right: auto; */
         width: 75%;
+    }
+
+    .principles-img-alt {
+        display: none;
     }
 
     button.btn-close {
@@ -248,5 +260,33 @@ li.dropdown ul li a{
 
     #principles-content3.padding-text {
         padding: 0px;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .team-description p {
+        font-size: 13px;
+    }
+    
+    .team-description p.team-position {
+        font-size: 13px;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .navbar-custom .navbar-brand {
+        padding-left: 10px;
+    }
+
+    .team-description p {
+        font-size: 9px;
+    }
+
+    .team-description h4 {
+        font-size: medium;
+    }
+
+    .team-description p.team-position {
+        font-size: 11px;
     }
 }
