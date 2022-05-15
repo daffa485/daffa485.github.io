@@ -11,80 +11,191 @@
     <link href="assets/css/style.css" rel="stylesheet">
 
     <title>RAC | Relevance and Alliance Capital</title>
+
+    <script type="text/javascript" src="assets/js/modernizr.custom.86080.js"></script>
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-custom">
       <div class="container-fluid">
         <a class="navbar-brand" href="index.html"><img src="assets/images/logo.png" class="logo-img" width="75%" alt="logo"></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon">
-              <i class="fa fa-navicon" style="color: white; margin-top: 5px;"></i>
-            </span>
+        <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> -->
+        <button class="navbar-toggler" type="button" id="open-btn">
+          <span class="navbar-toggler-icon">
+            <i class="fa fa-navicon" style="color: white; margin-top: 5px;"></i>
+          </span>
         </button>
         <div class="collapse nav-menu-custom" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item dropdown" style="padding-right: 35px">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                ABOUT US
+              <a class="nav-link dropdown-toggle dropdown-nav" href="#" id="navbarDropdown">
+                A B O U T&ensp;U S
               </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <!-- <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                 <li><a class="dropdown-item" href="principles.html">PRINCIPLES</a></li>
                 <li><a class="dropdown-item" href="#">CREDENTIALS</a></li>
                 <li><a class="dropdown-item" href="team.html">TEAM</a></li>
-              </ul>
+              </ul> -->
             </li>
             <li class="nav-item" style="padding-right: 35px">
-              <a class="nav-link" aria-current="page" href="our-business.html">OUR BUSINESS</a>
+              <a class="nav-link" aria-current="page" href="our-business.html">O U R&ensp;B U S I N E S S</a>
             </li>
             <li class="nav-item" style="padding-right: 35px">
-              <a class="nav-link" href="#">PARTNERS LOGIN</a>
+              <a class="nav-link" href="#">P A R T N E R S&ensp;L O G I N</a>
             </li>
             <li class="nav-item" style="padding-right: 35px">
-              <a class="nav-link" href="contact.html">CONTACT US</a>
+              <a class="nav-link" href="contact.html">C O N T A C T&ensp;U S</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <nav class="navbar navbar-expand-lg nav-brand-item d-none">
+      <div class="container-fluid" style="height: 50px;">
+        <a class="navbar-brand" href="index.html"><img src="assets/images/logo.png" class="logo-img" width="75%" alt="logo"></a>
+        <div class="nav-menu-custom">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item" style="padding-right: 35px">
+              <a class="nav-link" aria-current="page" href="principles.html">P R I N C I P L E S</a>
+            </li>
+            <li class="nav-item" style="padding-right: 35px">
+              <a class="nav-link" href="credential.html">C R E D E N T I A L S</a>
+            </li>
+            <li class="nav-item" style="padding-right: 258px;">
+              <a class="nav-link" href="team.html">T E A M</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
 
-    <div class="main-content">
-        <div class="banner-image">
-            <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                  <div class="carousel-item active home-banner">
-                    <img src="assets/images/Home_banner1.png" class="w-100" style="max-height: 100%;" data-bs-interval="10000" alt="banner">
-                    <div class="centered">
-                        <!-- <p class="opener-text">RELEVANCE AND ALLIANCE CAPITAL</p> -->
-                        <h1>Your strategic partner for the actual things that matter.</h1>
-                    </div>
+    <!-- <div class="main-content"> -->
+      <ul class="cb-slideshow">
+        <li><span>Image 01</span>
+            <div>
+                <h1>Your strategic partner for the actual things that matter.</h1>
+            </div>
+        </li>
+        <li><span>Image 02</span>
+            <div>
+                <h1>A multi-family office, investment and corporate finance advisory firm.</h1>
+            </div>
+        </li>
+        <li><span>Image 03</span>
+            <div>
+                <h1>Entrusted by leading families and institutions</h1>
+            </div>
+        </li>
+        <li><span>Image 04</span>
+            <div>
+                <h1>Your strategic partner for the actual things that matter.</h1>
+            </div>
+        </li>
+        <li><span>Image 05</span>
+            <div>
+                <h1>A multi-family office, investment and corporate finance advisory firm.</h1>
+            </div>
+        </li>
+        <li><span>Image 06</span>
+            <div>
+                <h1>Entrusted by leading families and institutions</h1>
+            </div>
+        </li>
+      </ul>
+
+      <div class="sidebar" id="accordionExample">
+        <a href="javascript:void(0)" class="closebtn" id="close-btn" style="color: white; text-decoration: none; font-family: 'ibm_plex_sansextralight';">x</a>
+        <ul class="navigation-list">
+          <li class="navigation-item" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-controls="collapseOne">A B O U T&ensp;U S</li>
+          <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+            <ul class="navigation-list">
+              <a href="principles.html"><li class="navigation-item">P R I N C I P L E S</li></a>
+              <a href="credential.html"><li class="navigation-item">C R E D E N T I A L S</li></a>
+              <a href="team.html"><li class="navigation-item">T E A M</li></a>
+            </ul>
+          </div>
+          <a href="our-business.html" ><li class="navigation-item">O U R&ensp;B U S I N E S S</li></a>
+          <a href="#" ><li class="navigation-item">P A R T N E R S&ensp;L O G&ensp;I N</li></a>
+          <a href="contact.html" ><li class="navigation-item">C O N T A C T</li></a>
+        </ul>
+      </div>
+
+      <!-- <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              Accordion Item #1
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              Accordion Item #2
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              Accordion Item #3
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+            </div>
+          </div>
+        </div>
+      </div> -->
+      <!-- <div class="banner-image">
+          <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active home-banner">
+                  <div class="banner">
+                    <img src="assets/images/Home_banner1.png" class="w-100 center-fit" data-bs-interval="10000" alt="banner">
                   </div>
-                  <div class="carousel-item home-banner">
-                    <img src="assets/images/Home_banner2.png" class="w-100" style="max-height: 100%;" data-bs-interval="2000" alt="banner">
-                    <div class="centered">
-                        <!-- <p class="opener-text">RELEVANCE AND ALLIANCE CAPITAL</p> -->
-                        <h1>A multi-family office, investment and corporate finance advisory firm.</h1>
-                    </div>
-                  </div>
-                  <div class="carousel-item home-banner">
-                    <img src="assets/images/Home_banner3.png" class="w-100" style="max-height: 100%;" alt="banner">
-                    <div class="centered">
-                        <!-- <p class="opener-text">RELEVANCE AND ALLIANCE CAPITAL</p> -->
-                        <h1>Entrusted by leading families and institutions.</h1>
-                    </div>
+                  <div class="centered">
+                      <h1>Your strategic partner for the actual things that matter.</h1>
                   </div>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Next</span>
-                </button>
-            </div>
-        </div>
-
-    </div>
+                <div class="carousel-item home-banner">
+                  <div class="banner">
+                    <img src="assets/images/Home_banner2.png" class="w-100 center-fit" data-bs-interval="2000" alt="banner">
+                  </div>
+                  <div class="centered">
+                      <h1>A multi-family office, investment and corporate finance advisory firm.</h1>
+                  </div>
+                </div>
+                <div class="carousel-item home-banner">
+                  <div class="banner">
+                    <img src="assets/images/Home_banner3.png" class="w-100 center-fit" alt="banner">
+                  </div>
+                  <div class="centered">
+                      <h1>Entrusted by leading families and institutions.</h1>
+                  </div>
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+          </div>
+      </div> -->
+    <!-- </div> -->
 
     <!-- Optional JavaScript; choose one of the two! -->
 
@@ -100,7 +211,7 @@
     <!-- Jquery CDN -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js"></script>
     <!-- Custom Javascript -->
-    <!-- <script src="assets/js/app.js"></script> -->
+    <script src="assets/js/app.js"></script>
     <script>
       function myFunction(x) {
         var menu = document.getElementById("navbarSupportedContent");
@@ -117,4 +228,4 @@
       x.addListener(myFunction) // Attach listener function on state changes
     </script>
   </body>
-</html>
+</html> 

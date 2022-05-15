@@ -14,47 +14,68 @@
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-custom">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="index.html"><img src="assets/images/logo.png" width="75%" alt="logo"></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon">
-                <i class="fa fa-navicon" style="color: white; margin-top: 5px;"></i>
-              </span>
-            </button>
-            <div class="collapse nav-menu-custom" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item dropdown" style="padding-right: 50px">
-                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        ABOUT US
-                      </a>
-                      <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <li><a class="dropdown-item" href="principles.html">PRINCIPLES</a></li>
-                        <li><a class="dropdown-item" href="#">CREDENTIALS</a></li>
-                        <li><a class="dropdown-item" href="team.html">TEAM</a></li>
-                      </ul>
-                    </li>
-                    <li class="nav-item" style="padding-right: 50px">
-                      <a class="nav-link" aria-current="page" href="our-business.html">OUR BUSINESS</a>
-                    </li>
-                    <li class="nav-item" style="padding-right: 50px">
-                      <a class="nav-link" href="#">PARTNERS LOGIN</a>
-                    </li>
-                    <li class="nav-item" style="padding-right: 50px">
-                      <a class="nav-link" href="contact.html">CONTACT US</a>
-                    </li>
-                </ul>
-            </div>
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html"><img src="assets/images/logo.png" class="logo-img" width="75%" alt="logo"></a>
+        <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> -->
+          <button class="navbar-toggler" type="button" id="open-btn">
+          <span class="navbar-toggler-icon">
+            <i class="fa fa-navicon" style="color: white; margin-top: 5px;"></i>
+          </span>
+        </button>
+        <div class="collapse nav-menu-custom" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item dropdown" style="padding-right: 35px">
+              <a class="nav-link dropdown-toggle dropdown-nav" href="#" id="navbarDropdown">
+                A B O U T&ensp;U S
+              </a>
+              <!-- <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="principles.html">PRINCIPLES</a></li>
+                <li><a class="dropdown-item" href="#">CREDENTIALS</a></li>
+                <li><a class="dropdown-item" href="team.html">TEAM</a></li>
+              </ul> -->
+            </li>
+            <li class="nav-item" style="padding-right: 35px">
+              <a class="nav-link" aria-current="page" href="our-business.html">O U R&ensp;B U S I N E S S</a>
+            </li>
+            <li class="nav-item" style="padding-right: 35px">
+              <a class="nav-link" href="#">P A R T N E R S&ensp;L O G I N</a>
+            </li>
+            <li class="nav-item" style="padding-right: 35px">
+              <a class="nav-link" href="contact.html">C O N T A C T&ensp;U S</a>
+            </li>
+          </ul>
         </div>
+      </div>
+    </nav>
+    <nav class="navbar navbar-expand-lg nav-brand-item d-none">
+      <div class="container-fluid" style="height: 50px;">
+        <a class="navbar-brand" href="index.html"><img src="assets/images/logo.png" class="logo-img" width="75%" alt="logo"></a>
+        <div class="nav-menu-custom">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item" style="padding-right: 35px">
+              <a class="nav-link" aria-current="page" href="principles.html">P R I N C I P L E S</a>
+            </li>
+            <li class="nav-item" style="padding-right: 35px">
+              <a class="nav-link" href="credential.html">C R E D E N T I A L S</a>
+            </li>
+            <li class="nav-item" style="padding-right: 258px;">
+              <a class="nav-link" href="team.html">T E A M</a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </nav>
 
     <div class="main-content">
-      <div class="banner">
-        <img src="assets/images/Team/Banner_team.png" class="w-100" style="max-width: 100%; max-height: 100%;" alt="banner">
+      <!-- <div class="banner">
+        <img src="assets/images/Team/Banner_team.png" class="w-100 center-fit" alt="banner">
+      </div> -->
+      <div id="team-banner">
+        <div class="centered">
+            <h1><i>Independent, privately-owned</i> firm directly involved in looking after our partners</h1>
+        </div>
       </div>
-      <div class="centered">
-          <h1><i>Independent, privately-owned</i> firm directly involved in looking after our partners</h1>
-      </div>
-      <img src="assets/images/Team/Team_Foto.png" class="d-block w-100" style="max-width: 100%; max-height: 80%;" alt="banner">
+      <!-- <img src="assets/images/Team/Team_Foto.png" class="d-block w-100" style="max-width: 100%; max-height: 80%;" alt="banner"> -->
       <div class="container bg-white team-container">
         <div class="row g-0 mt-5">
           <div class="col-lg-4">
@@ -64,7 +85,7 @@
                 <div class="team-description">
                   <p class="team-position" style="font-family: ibm_plex_sansregular;">Chairman</p>
                   <h4>Eri Reksoprodjo</h4>
-                  <p class="mt-3" style="font-family: ibm_plex_sansregular;">
+                  <p class="mt-3" style="font-family: ibm_plex_sanslight; font-size: 15px">
                     A well-seasoned professional with more than 30 years of investment and banking experiences,
                     actively contributing to Southeast Asia's landscape through multiple partnerships at the region's
                     leading PE/VC and banking firms.
@@ -80,7 +101,7 @@
                 <div class="team-description">
                   <p class="team-position" style="font-family: ibm_plex_sansregular;">Executive Senior Advisor</p>
                   <h4>Muliaman Hadad</h4>
-                  <p class="mt-3" style="font-family: ibm_plex_sansregular;">
+                  <p class="mt-3" style="font-family: ibm_plex_sanslight; font-size: 15px">
                     A well-seasoned professional with more than 30 years of investment and banking experiences,
                     actively contributing to Southeast Asia's landscape through multiple partnerships at the region's
                     leading PE/VC and banking firms.
@@ -101,7 +122,7 @@
                 <div class="team-description">
                   <p class="team-position" style="font-family: ibm_plex_sansregular;">Managing Partner</p>
                   <h4>Emil Reven</h4>
-                  <p class="mt-3" style="font-family: ibm_plex_sansregular;">
+                  <p class="mt-3" style="font-family: ibm_plex_sanslight; font-size: 15px">
                     Emil is a professional with extensive experiences in private investment and family enterprises,
                     bringing acumen received from combining fundamental economy approach and early days of Indonesia's
                     venture capital.
@@ -117,7 +138,7 @@
                 <div class="team-description">
                   <p class="team-position" style="font-family: ibm_plex_sansregular;">Managing Partner</p>
                   <h4>Hira Riga</h4>
-                  <p class="mt-3" style="font-family: ibm_plex_sansregular;">
+                  <p class="mt-3" style="font-family: ibm_plex_sanslight; font-size: 15px">
                     Riga is an accomplished professional with deep-seated experiences surrounding investment banking
                     and M&A advisory.
                   </p>
@@ -132,7 +153,7 @@
                 <div class="team-description">
                   <p class="team-position" style="font-family: ibm_plex_sansregular;">Associate</p>
                   <h4>Sadewo Musa</h4>
-                  <p class="mt-3" style="font-family: ibm_plex_sansregular;">
+                  <p class="mt-3" style="font-family: ibm_plex_sanslight; font-size: 15px">
                     Sadewo is a professional with tested strategic acumen and commmitment towards delivering value to our partners
                   </p>
                 </div>
@@ -148,7 +169,7 @@
                 <div class="team-description">
                   <p class="team-position" style="font-family: ibm_plex_sansregular;">Associate</p>
                   <h4>Farras Rivaldi</h4>
-                  <p class="mt-3" style="font-family: ibm_plex_sansregular;">
+                  <p class="mt-3" style="font-family: ibm_plex_sanslight; font-size: 15px">
                     Farras is a proven professional with a wide-array of experiences from Indonesia's leading management consulting firm.
                   </p>
                 </div>
@@ -162,7 +183,7 @@
                 <div class="team-description">
                   <p class="team-position" style="font-family: ibm_plex_sansregular;">Analyst</p>
                   <h4>Jovita Amaris</h4>
-                  <p class="mt-3" style="font-family: ibm_plex_sansregular;">
+                  <p class="mt-3" style="font-family: ibm_plex_sanslight; font-size: 15px">
                     Jovita embarks her professional career by helping leading family enterprises and institutions in Indonesia
                   </p>
                 </div>
@@ -386,6 +407,23 @@
           </div>
         </div>
       </div>
+    </div>
+
+    <div class="sidebar" id="accordionExample">
+      <a href="javascript:void(0)" class="closebtn" id="close-btn" style="color: white; text-decoration: none; font-family: 'ibm_plex_sansextralight';">x</a>
+      <ul class="navigation-list">
+        <li class="navigation-item" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-controls="collapseOne">A B O U T&ensp;U S</li>
+        <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+          <ul class="navigation-list">
+            <a href="principles.html"><li class="navigation-item">P R I N C I P L E S</li></a>
+            <a href="credential.html"><li class="navigation-item">C R E D E N T I A L S</li></a>
+            <a href="team.html"><li class="navigation-item">T E A M</li></a>
+          </ul>
+        </div>
+        <a href="our-business.html" ><li class="navigation-item">O U R&ensp;B U S I N E S S</li></a>
+        <a href="#" ><li class="navigation-item">P A R T N E R S&ensp;L O G&ensp;I N</li></a>
+        <a href="contact.html" ><li class="navigation-item">C O N T A C T</li></a>
+      </ul>
     </div>
 
     <div class="clearfix">&nbsp;</div>

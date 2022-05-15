@@ -14,47 +14,67 @@
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-custom">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="index.html"><img src="assets/images/logo.png" width="75%" alt="logo"></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon">
-                <i class="fa fa-navicon" style="color: white; margin-top: 5px;"></i>
-              </span>
-            </button>
-            <div class="collapse nav-menu-custom" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item dropdown" style="padding-right: 50px">
-                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        ABOUT US
-                      </a>
-                      <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <li><a class="dropdown-item" href="principles.html">PRINCIPLES</a></li>
-                        <li><a class="dropdown-item" href="#">CREDENTIALS</a></li>
-                        <li><a class="dropdown-item" href="team.html">TEAM</a></li>
-                      </ul>
-                    </li>
-                    <li class="nav-item" style="padding-right: 50px">
-                      <a class="nav-link" aria-current="page" href="our-business.html">OUR BUSINESS</a>
-                    </li>
-                    <li class="nav-item" style="padding-right: 50px">
-                      <a class="nav-link" href="#">PARTNERS LOGIN</a>
-                    </li>
-                    <li class="nav-item" style="padding-right: 50px">
-                      <a class="nav-link" href="contact.html">CONTACT US</a>
-                    </li>
-                </ul>
-            </div>
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html"><img src="assets/images/logo.png" class="logo-img" width="75%" alt="logo"></a>
+        <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> -->
+          <button class="navbar-toggler" type="button" id="open-btn">
+          <span class="navbar-toggler-icon">
+            <i class="fa fa-navicon" style="color: white; margin-top: 5px;"></i>
+          </span>
+        </button>
+        <div class="collapse nav-menu-custom" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item dropdown" style="padding-right: 35px">
+              <a class="nav-link dropdown-toggle dropdown-nav" href="#" id="navbarDropdown">
+                A B O U T&ensp;U S
+              </a>
+              <!-- <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="principles.html">PRINCIPLES</a></li>
+                <li><a class="dropdown-item" href="#">CREDENTIALS</a></li>
+                <li><a class="dropdown-item" href="team.html">TEAM</a></li>
+              </ul> -->
+            </li>
+            <li class="nav-item" style="padding-right: 35px">
+              <a class="nav-link" aria-current="page" href="our-business.html">O U R&ensp;B U S I N E S S</a>
+            </li>
+            <li class="nav-item" style="padding-right: 35px">
+              <a class="nav-link" href="#">P A R T N E R S&ensp;L O G I N</a>
+            </li>
+            <li class="nav-item" style="padding-right: 35px">
+              <a class="nav-link" href="contact.html">C O N T A C T&ensp;U S</a>
+            </li>
+          </ul>
         </div>
+      </div>
+    </nav>
+    <nav class="navbar navbar-expand-lg nav-brand-item d-none">
+      <div class="container-fluid" style="height: 50px;">
+        <a class="navbar-brand" href="index.html"><img src="assets/images/logo.png" class="logo-img" width="75%" alt="logo"></a>
+        <div class="nav-menu-custom">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item" style="padding-right: 35px">
+              <a class="nav-link" aria-current="page" href="principles.html">P R I N C I P L E S</a>
+            </li>
+            <li class="nav-item" style="padding-right: 35px">
+              <a class="nav-link" href="credential.html">C R E D E N T I A L S</a>
+            </li>
+            <li class="nav-item" style="padding-right: 258px;">
+              <a class="nav-link" href="team.html">T E A M</a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </nav>
 
     <div class="main-content">
-      <div class="contact-banner">
+      <!-- <div class="contact-banner">
         <img src="assets/images/Home_banner1.png" class="w-100" style="max-width: 100%;" alt="banner">
-      </div>
+      </div> -->
+      <div id="contact-banner">
         <div class="left">
-          <b class="opener-text">Phone</b>
+          <!-- <b class="opener-text">Phone</b>
           <h3>+62 896 3324 1534</h3>
-          <br>
+          <br> -->
           <b class="opener-text">Office</b>
           <h3>Treasury Tower Office 1, Level 7.</h3>
           <h3>Scbd Lot 28</h3>
@@ -65,15 +85,33 @@
           <b class="opener-text">Email</b>
           <h3>Info@racapital.co</h3>
         </div>
+      </div>
     </div>
 
-    <div class="navbar navbar-inverse navbar-fixed-bottom navbar-custom rac-footer">
+    <div class="sidebar" id="accordionExample">
+      <a href="javascript:void(0)" class="closebtn" id="close-btn" style="color: white; text-decoration: none; font-family: 'ibm_plex_sansextralight';">x</a>
+      <ul class="navigation-list">
+        <li class="navigation-item" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-controls="collapseOne">A B O U T&ensp;U S</li>
+        <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+          <ul class="navigation-list">
+            <a href="principles.html"><li class="navigation-item">P R I N C I P L E S</li></a>
+            <a href="credential.html"><li class="navigation-item">C R E D E N T I A L S</li></a>
+            <a href="team.html"><li class="navigation-item">T E A M</li></a>
+          </ul>
+        </div>
+        <a href="our-business.html" ><li class="navigation-item">O U R&ensp;B U S I N E S S</li></a>
+        <a href="#" ><li class="navigation-item">P A R T N E R S&ensp;L O G&ensp;I N</li></a>
+        <a href="contact.html" ><li class="navigation-item">C O N T A C T</li></a>
+      </ul>
+    </div>
+    
+    <!-- <div class="navbar navbar-inverse navbar-fixed-bottom navbar-custom rac-footer">
       <div class="container">
         <div class="logo-name"><h3>RAC</h3></div>
         <div class="contact-to">info@racapital.co</div>
         <div class="copyright-name">&copy; Copyright 2022 Relevnace and Alliance Capital. All Right Reserved</div>
       </div>
-    </div>
+    </div> -->
 
     <!-- Optional JavaScript; choose one of the two! -->
 
