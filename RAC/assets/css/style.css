@@ -14,23 +14,230 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'ibm_plex_sansbold';
+    src: url('ibmplexsans-bold-webfont.woff2') format('woff2'),
+         url('ibmplexsans-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'ibm_plex_sansbold_italic';
+    src: url('ibmplexsans-bolditalic-webfont.woff2') format('woff2'),
+         url('ibmplexsans-bolditalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'ibm_plex_sansextralight';
+    src: url('ibmplexsans-extralight-webfont.woff2') format('woff2'),
+         url('ibmplexsans-extralight-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'ibm_plex_sansXLtIt';
+    src: url('ibmplexsans-extralightitalic-webfont.woff2') format('woff2'),
+         url('ibmplexsans-extralightitalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'ibm_plex_sansitalic';
+    src: url('ibmplexsans-italic-webfont.woff2') format('woff2'),
+         url('ibmplexsans-italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'ibm_plex_sanslight';
+    src: url('ibmplexsans-light-webfont.woff2') format('woff2'),
+         url('ibmplexsans-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'ibm_plex_sanslight_italic';
+    src: url('ibmplexsans-lightitalic-webfont.woff2') format('woff2'),
+         url('ibmplexsans-lightitalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'ibm_plex_sansmedium';
+    src: url('ibmplexsans-medium-webfont.woff2') format('woff2'),
+         url('ibmplexsans-medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'ibm_plex_sansmedium_italic';
+    src: url('ibmplexsans-mediumitalic-webfont.woff2') format('woff2'),
+         url('ibmplexsans-mediumitalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'ibm_plex_sanssemibold';
+    src: url('ibmplexsans-semibold-webfont.woff2') format('woff2'),
+         url('ibmplexsans-semibold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'ibm_plex_sanssemibold_italic';
+    src: url('ibmplexsans-semibolditalic-webfont.woff2') format('woff2'),
+         url('ibmplexsans-semibolditalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'ibm_plex_sansthin';
+    src: url('ibmplexsans-thin-webfont.woff2') format('woff2'),
+         url('ibmplexsans-thin-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'optimamedium';
+    src: url('optima_medium-webfont.woff2') format('woff2'),
+         url('optima_medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'optimanormal';
+    src: url('optima-webfont.woff2') format('woff2'),
+         url('optima-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'optimabold';
+    src: url('optima_b-webfont.woff2') format('woff2'),
+         url('optima_b-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 * {
     font-family: 'opulentregular';
 }
 
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: #001f52;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    z-index: 3;
+}
+
+.sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+.navigation-list {
+    color: white;
+    list-style: none;
+}
+
+.navigation-item {
+    font-family: 'ibm_plex_sanslight';
+    margin: 40px 0px;
+    font-size: 13px;
+}
+
+.navigation-list a {
+    display: block;
+    transition: 0.3s;
+    color: white;
+    text-decoration: none;
+}
+
 .description-text p{
-    font-family: 'ibm_plex_sansregular';
+    font-family: 'ibm_plex_sanslight';
     color: gray;
 }
 
 .navbar-custom {
     background-color: #001f52;
     display: block;
+    z-index: 2;
 }
 
 .navbar-custom .navbar-brand,
 .navbar-custom .navbar-text {
     color: white;
+}
+
+.nav-brand-item {
+    background-color: white;
+    height: 50px;
+    /* opacity: 0; */
+}
+
+.nav-brand-item .nav-menu-custom {
+    display: flex;
+    padding-right: 100px;
+    justify-content: space-between;
+}
+
+.nav-brand-item .nav-menu-custom ul li a {
+    color: #001f52;
+    font-size: 11px;
+    font-family: 'ibm_plex_sanslight';
 }
 
 .navbar-custom .navbar-brand {
@@ -45,12 +252,14 @@
 
 .nav-menu-custom ul li a{
     color: white;
-    font-size: 13px;
+    font-size: 11px;
+    font-family: 'ibm_plex_sanslight';
 }
 
 li.dropdown ul li a{
     color: black;
     font-size: 13px;
+    font-family: 'ibm_plex_sansregular';
 }
 
 .centered {
@@ -62,18 +271,108 @@ li.dropdown ul li a{
     color: white;
 }
 
+#our-business {
+    background-image: url(../images/our_business_banner.png);
+    width: 100%;
+    min-height: 100%;
+
+    /* Set a specific height */
+    min-height: 1080px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* @media only screen and (max-width: 1920px) and (max-height: 1080px) {
+    #our-business {
+        min-height: 1080px;
+    }
+} */
+
+#principles {
+    background-image: url(../images/Principles_banner1.png);
+    width: 100%;
+    height: 100%;
+
+    /* Set a specific height */
+    min-height: 1080px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#team-banner {
+    background-image: url(../images/Team/Banner_team.png);
+    width: 100%;
+    height: 100%;
+
+    /* Set a specific height */
+    min-height: 1080px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#credentials-banner {
+    background-image: url(../images/Credential_banner1.png);
+    width: 100%;
+    height: 100%;
+
+    /* Set a specific height */
+    min-height: 1080px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#contact-banner {
+    background-image: url(../images/Home_banner1.png);
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
 .left {
     position: absolute;
-    top: 30%;
+    top: 25%;
     left: 20%;
     /* transform: translate(-50%, -50%); */
     /* text-align: center; */
     color: white;
 }
 
+.banner{
+    display: grid;
+    height: 100%;
+}
+
+.center-fit {
+    max-width: 100%;
+    max-height: 100.9vh;
+    margin: auto;
+    margin-top: -4%;
+}
+
 .opener-text{
     color: #033382;
     font-size: 13px;
+}
+
+.business-content h3 {
+    line-height: 1.5;
 }
 
 #business-content1 {
@@ -115,6 +414,14 @@ li.dropdown ul li a{
 }
 
 /* div#principles-content1 .padding-text {
+    padding-right: 130px;
+}
+
+div#principles-content2 .padding-text {
+    padding-left: 130px;
+}
+
+div#principles-content3 .padding-text {
     padding-right: 130px;
 } */
 
@@ -167,6 +474,10 @@ li.dropdown ul li a{
 
 .team-description p.team-position {
     font-size: 15px;
+}
+
+.fade-content {
+    opacity: 1;
 }
 
 @media only screen and (max-width: 971px) {
@@ -288,5 +599,243 @@ li.dropdown ul li a{
 
     .team-description p.team-position {
         font-size: 11px;
+    }
+}
+
+/* New Slideshow */
+.cb-slideshow,
+.cb-slideshow:after { 
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: 0; 
+}
+
+.cb-slideshow:after { 
+    content: '';
+    background: transparent url(../images/pattern.png) repeat top left; 
+}
+.cb-slideshow {
+    list-style: none;
+}
+.cb-slideshow li span { 
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    color: transparent;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: none;
+    opacity: 0;
+    z-index: 0;
+	-webkit-backface-visibility: hidden;
+    -webkit-animation: imageAnimation 36s linear infinite 0s;
+    -moz-animation: imageAnimation 36s linear infinite 0s;
+    -o-animation: imageAnimation 36s linear infinite 0s;
+    -ms-animation: imageAnimation 36s linear infinite 0s;
+    animation: imageAnimation 36s linear infinite 0s; 
+}
+.cb-slideshow li div { 
+    z-index: 1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    text-align: center;
+    opacity: 0;
+    color: #fff;
+    -webkit-animation: titleAnimation 36s linear infinite 0s;
+    -moz-animation: titleAnimation 36s linear infinite 0s;
+    -o-animation: titleAnimation 36s linear infinite 0s;
+    -ms-animation: titleAnimation 36s linear infinite 0s;
+    animation: titleAnimation 36s linear infinite 0s; 
+}
+.cb-slideshow li div h1 { 
+    font-family: 'opulentregular';
+    padding: 0;
+}
+.cb-slideshow li:nth-child(1) span { 
+    background-image: url(../images/Home_banner1.png) 
+}
+.cb-slideshow li:nth-child(2) span { 
+    background-image: url(../images/Home_banner2.png);
+    -webkit-animation-delay: 6s;
+    -moz-animation-delay: 6s;
+    -o-animation-delay: 6s;
+    -ms-animation-delay: 6s;
+    animation-delay: 6s; 
+}
+.cb-slideshow li:nth-child(3) span { 
+    background-image: url(../images/Home_banner3.png);
+    -webkit-animation-delay: 12s;
+    -moz-animation-delay: 12s;
+    -o-animation-delay: 12s;
+    -ms-animation-delay: 12s;
+    animation-delay: 12s; 
+}
+.cb-slideshow li:nth-child(4) span { 
+    background-image: url(../images/Home_banner1.png);
+    -webkit-animation-delay: 18s;
+    -moz-animation-delay: 18s;
+    -o-animation-delay: 18s;
+    -ms-animation-delay: 18s;
+    animation-delay: 18s; 
+}
+.cb-slideshow li:nth-child(5) span { 
+    background-image: url(../images/Home_banner2.png);
+    -webkit-animation-delay: 24s;
+    -moz-animation-delay: 24s;
+    -o-animation-delay: 24s;
+    -ms-animation-delay: 24s;
+    animation-delay: 24s; 
+}
+.cb-slideshow li:nth-child(6) span { 
+    background-image: url(../images/Home_banner3.png);
+    -webkit-animation-delay: 30s;
+    -moz-animation-delay: 30s;
+    -o-animation-delay: 30s;
+    -ms-animation-delay: 30s;
+    animation-delay: 30s; 
+}
+.cb-slideshow li:nth-child(2) div { 
+    -webkit-animation-delay: 6s;
+    -moz-animation-delay: 6s;
+    -o-animation-delay: 6s;
+    -ms-animation-delay: 6s;
+    animation-delay: 6s; 
+}
+.cb-slideshow li:nth-child(3) div { 
+    -webkit-animation-delay: 12s;
+    -moz-animation-delay: 12s;
+    -o-animation-delay: 12s;
+    -ms-animation-delay: 12s;
+    animation-delay: 12s; 
+}
+.cb-slideshow li:nth-child(4) div { 
+    -webkit-animation-delay: 18s;
+    -moz-animation-delay: 18s;
+    -o-animation-delay: 18s;
+    -ms-animation-delay: 18s;
+    animation-delay: 18s; 
+}
+.cb-slideshow li:nth-child(5) div { 
+    -webkit-animation-delay: 24s;
+    -moz-animation-delay: 24s;
+    -o-animation-delay: 24s;
+    -ms-animation-delay: 24s;
+    animation-delay: 24s; 
+}
+.cb-slideshow li:nth-child(6) div { 
+    -webkit-animation-delay: 30s;
+    -moz-animation-delay: 30s;
+    -o-animation-delay: 30s;
+    -ms-animation-delay: 30s;
+    animation-delay: 30s; 
+}
+
+/* Animation for the slideshow images */
+@-webkit-keyframes imageAnimation { 
+    0% { opacity: 0;
+    -webkit-animation-timing-function: ease-in; }
+    8% { opacity: 1;
+         -webkit-animation-timing-function: ease-out; }
+    17% { opacity: 1 }
+    25% { opacity: 0 }
+    100% { opacity: 0 }
+}
+@-moz-keyframes imageAnimation { 
+    0% { opacity: 0;
+    -moz-animation-timing-function: ease-in; }
+    8% { opacity: 1;
+         -moz-animation-timing-function: ease-out; }
+    17% { opacity: 1 }
+    25% { opacity: 0 }
+    100% { opacity: 0 }
+}
+@-o-keyframes imageAnimation { 
+    0% { opacity: 0;
+    -o-animation-timing-function: ease-in; }
+    8% { opacity: 1;
+         -o-animation-timing-function: ease-out; }
+    17% { opacity: 1 }
+    25% { opacity: 0 }
+    100% { opacity: 0 }
+}
+@-ms-keyframes imageAnimation { 
+    0% { opacity: 0;
+    -ms-animation-timing-function: ease-in; }
+    8% { opacity: 1;
+         -ms-animation-timing-function: ease-out; }
+    17% { opacity: 1 }
+    25% { opacity: 0 }
+    100% { opacity: 0 }
+}
+@keyframes imageAnimation { 
+    0% { opacity: 0;
+    animation-timing-function: ease-in; }
+    8% { opacity: 1;
+         animation-timing-function: ease-out; }
+    17% { opacity: 1 }
+    25% { opacity: 0 }
+    100% { opacity: 0 }
+}
+/* Animation for the title */
+@-webkit-keyframes titleAnimation { 
+    0% { opacity: 0 }
+    8% { opacity: 1 }
+    17% { opacity: 1 }
+    19% { opacity: 0 }
+    100% { opacity: 0 }
+}
+@-moz-keyframes titleAnimation { 
+    0% { opacity: 0 }
+    8% { opacity: 1 }
+    17% { opacity: 1 }
+    19% { opacity: 0 }
+    100% { opacity: 0 }
+}
+@-o-keyframes titleAnimation { 
+    0% { opacity: 0 }
+    8% { opacity: 1 }
+    17% { opacity: 1 }
+    19% { opacity: 0 }
+    100% { opacity: 0 }
+}
+@-ms-keyframes titleAnimation { 
+    0% { opacity: 0 }
+    8% { opacity: 1 }
+    17% { opacity: 1 }
+    19% { opacity: 0 }
+    100% { opacity: 0 }
+}
+@keyframes titleAnimation { 
+    0% { opacity: 0 }
+    8% { opacity: 1 }
+    17% { opacity: 1 }
+    19% { opacity: 0 }
+    100% { opacity: 0 }
+}
+/* Show at least something when animations not supported */
+.no-cssanimations .cb-slideshow li span{
+	opacity: 1;
+}
+
+/* @media screen and (max-width: 1140px) { 
+    .cb-slideshow li div h1 { font-size: 140px }
+} */
+@media screen and (max-width: 600px) { 
+    .cb-slideshow li div h1 { 
+        font-size: 40px;
+        text-align: left;
+    }
+
+    .cb-slideshow li div {
+        padding-left: 15px;
+        padding-right: 5px;
     }
 }
